@@ -16,7 +16,7 @@ public class Main extends Application {
 			Parent root = (Parent) fxmlLoader.load(this.getClass().getResourceAsStream("Kalender.fxml"));
 			
 			
-			Scene scene = new Scene(root,1600,800);
+			Scene scene = new Scene(root,1550,800);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
