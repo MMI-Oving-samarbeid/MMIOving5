@@ -5,13 +5,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="701.0" prefWidth="718.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane prefHeight="701.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane layoutX="-191.0" layoutY="-204.0" prefHeight="800.0" prefWidth="1550.0">
+      <Pane prefHeight="800.0" prefWidth="1550.0">
          <children>
-            <CheckBox layoutX="434.0" layoutY="439.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="434.0" layoutY="499.0" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox layoutX="60.0" layoutY="303.0" mnemonicParsing="false" text="Gruppe 1" />
+            <CheckBox layoutX="60.0" layoutY="349.0" mnemonicParsing="false" text="Gruppe 2" />
+            <Button layoutX="60.0" layoutY="120.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="111.0" text="Ny avtale" />
+            <Button layoutX="60.0" layoutY="184.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="111.0" text="Ny gruppe" />
+            <Label layoutX="60.0" layoutY="244.0" text="Vis kalender for:" />
          </children>
       </Pane>
    </children>
