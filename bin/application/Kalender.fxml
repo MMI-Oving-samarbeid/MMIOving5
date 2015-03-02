@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.media.*?>
 <?import java.lang.*?>
@@ -11,12 +12,43 @@
    <children>
       <Pane layoutX="1.0" prefHeight="800.0" prefWidth="1550.0">
          <children>
-            <CheckBox layoutX="60.0" layoutY="345.0" mnemonicParsing="false" text="Gruppe 1" />
-            <CheckBox layoutX="60.0" layoutY="391.0" mnemonicParsing="false" text="Gruppe 2" />
-            <Button layoutX="60.0" layoutY="139.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="111.0" text="Ny avtale" />
-            <Button layoutX="60.0" layoutY="203.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="111.0" text="Ny gruppe" />
-            <Label layoutX="60.0" layoutY="292.0" text="Vis kalender for:" />
-            <Circle fill="#ff1f9d" layoutX="488.0" layoutY="231.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+            <TitledPane animated="false" prefHeight="800.0" prefWidth="1550.0" text="untitled">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.22157622739018087" prefHeight="750.0" prefWidth="1550.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <CheckBox layoutX="35.0" layoutY="394.0" mnemonicParsing="false" text="Gruppe 2" />
+                                    <CheckBox layoutX="35.0" layoutY="347.0" mnemonicParsing="false" text="Gruppe 1" />
+                                    <Button layoutX="37.0" layoutY="88.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="174.0" text="Ny avtale" />
+                                    <Button layoutX="37.0" layoutY="144.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="174.0" text="Administrer grupper" />
+                                    <CheckBox layoutX="34.0" layoutY="441.0" mnemonicParsing="false" text="Gruppe 3" />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <TabPane prefHeight="506.0" prefWidth="1025.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="150.0">
+                                      <tabs>
+                                        <Tab text="Dag" />
+                                        <Tab text="Uke">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                          </content>
+                                        </Tab>
+                                          <Tab text="Måned" />
+                                          <Tab text="År" />
+                                      </tabs>
+                                    </TabPane>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
          </children>
       </Pane>
    </children>
