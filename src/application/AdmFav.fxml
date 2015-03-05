@@ -48,7 +48,7 @@
                                  <children>
                                     <GridPane layoutX="69.0" layoutY="82.0" prefHeight="768.0" prefWidth="1201.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                       <columnConstraints>
-                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="601.0" minWidth="10.0" prefWidth="400.0" />
                                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                       </columnConstraints>
                                       <rowConstraints>
@@ -203,12 +203,21 @@
                                                 </ScrollPane>
                                              </children>
                                           </VBox>
-                                          <TextArea opacity="0.5" prefHeight="200.0" prefWidth="200.0" text="Administrer favoritter" GridPane.columnSpan="2">
-                                             <font>
-                                                <Font size="44.0" />
-                                             </font>
-                                          </TextArea>
-                                          <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                          <HBox prefHeight="85.0" prefWidth="768.0" GridPane.columnSpan="2">
+                                             <children>
+                                                <Button mnemonicParsing="false" opacity="0.5" prefHeight="85.0" prefWidth="150.0" text="&lt;- Tilbake">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Button>
+                                                <TextArea opacity="0.5" prefHeight="85.0" prefWidth="1058.0" text="Administrer favoritter" GridPane.columnSpan="2">
+                                                   <font>
+                                                      <Font size="44.0" />
+                                                   </font>
+                                                </TextArea>
+                                             </children>
+                                          </HBox>
+                                          <ScrollPane prefHeight="614.0" prefWidth="626.0" GridPane.rowIndex="1">
                                             <content>
                                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="682.0" prefWidth="599.0">
                                                    <children>
