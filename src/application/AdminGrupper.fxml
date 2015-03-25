@@ -50,8 +50,8 @@
                                       <columnConstraints>
                                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="600.0" />
                                           <ColumnConstraints hgrow="SOMETIMES" minWidth="5.0" prefWidth="5.0" />
-                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
-                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="600.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="580.0" />
                                       </columnConstraints>
                                       <rowConstraints>
                                         <RowConstraints maxHeight="85.0" minHeight="1.0" prefHeight="85.0" vgrow="SOMETIMES" />
@@ -72,7 +72,7 @@
                                                       <Font size="23.0" />
                                                    </font>
                                                 </Button>
-                                                <TextArea opacity="0.5" prefHeight="85.0" prefWidth="1075.0" text="                              Administrer grupper" GridPane.columnSpan="4">
+                                                <TextArea editable="false" opacity="0.5" prefHeight="85.0" prefWidth="1075.0" text="Administrer grupper" GridPane.columnSpan="4">
                                                    <font>
                                                       <Font size="44.0" />
                                                    </font>
@@ -222,31 +222,54 @@
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                             </rowConstraints>
                                              <children>
-                                                <Label prefHeight="60.0" prefWidth="200.0" text="Medlemsliste:" GridPane.rowIndex="2" />
-                                                <Label prefHeight="28.0" prefWidth="101.0" text="Nytt medlem:" translateY="-15.0" GridPane.rowIndex="6" />
-                                                <VBox GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                <Label prefHeight="60.0" prefWidth="200.0" text="Medlemsliste:" GridPane.rowIndex="2">
+                                                   <GridPane.margin>
+                                                      <Insets left="5.0" />
+                                                   </GridPane.margin></Label>
+                                                <Label prefHeight="28.0" prefWidth="101.0" text="Nytt medlem:" translateY="-15.0" GridPane.rowIndex="6">
+                                                   <GridPane.margin>
+                                                      <Insets left="5.0" />
+                                                   </GridPane.margin></Label>
+                                                <VBox GridPane.columnIndex="2" GridPane.rowIndex="6" GridPane.rowSpan="2">
                                                    <children>
-                                                      <ComboBox prefHeight="31.0" prefWidth="519.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                                      <ComboBox prefHeight="31.0" prefWidth="250.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
                                                       <Label prefHeight="13.0" prefWidth="184.0" text="                         Navn" />
                                                    </children>
                                                 </VBox>
                                                 <ComboBox prefHeight="31.0" prefWidth="396.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="8" />
-                                                <Label prefHeight="91.0" prefWidth="176.0" text="Fjern medlem:" GridPane.rowIndex="8" />
-                                                <Button mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" text="Legg til" translateY="-15.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
-                                                <Button mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" text="Fjern" GridPane.columnIndex="6" GridPane.rowIndex="8" />
-                                                <VBox GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                                <Label prefHeight="91.0" prefWidth="176.0" text="Fjern medlem:" GridPane.rowIndex="8">
+                                                   <GridPane.margin>
+                                                      <Insets left="5.0" />
+                                                   </GridPane.margin></Label>
+                                                <Button mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" text="Legg til" translateY="-5.0" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                                                   <GridPane.margin>
+                                                      <Insets right="5.0" />
+                                                   </GridPane.margin></Button>
+                                                <Button mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" text="Fjern" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                                                   <GridPane.margin>
+                                                      <Insets right="5.0" />
+                                                   </GridPane.margin></Button>
+                                                <VBox GridPane.columnIndex="4" GridPane.rowIndex="6" GridPane.rowSpan="2">
                                                    <children>
                                                       <ComboBox prefHeight="31.0" prefWidth="519.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-                                                      <Label prefHeight="13.0" prefWidth="184.0" text="           Rolle" />
+                                                      <Label prefHeight="13.0" prefWidth="184.0" text="        Rolle" />
                                                    </children>
                                                 </VBox>
-                                                <Label prefHeight="89.0" prefWidth="129.0" text="Gruppenavn:" />
+                                                <Label prefHeight="89.0" prefWidth="129.0" text="Gruppenavn:">
+                                                   <GridPane.margin>
+                                                      <Insets left="5.0" />
+                                                   </GridPane.margin></Label>
                                                 <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="2" />
                                                 <TextField GridPane.columnIndex="2" />
-                                                <Label prefHeight="56.0" prefWidth="127.0" text="Beskrivelse:" GridPane.rowIndex="10" />
+                                                <Label prefHeight="56.0" prefWidth="127.0" text="Beskrivelse:" GridPane.rowIndex="10">
+                                                   <GridPane.margin>
+                                                      <Insets left="5.0" />
+                                                   </GridPane.margin></Label>
                                                 <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="10" GridPane.rowSpan="5" />
                                              </children>
                                           </GridPane>
+                                          <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefHeight="211.0" prefWidth="58.0" text="-&gt;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                          <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefHeight="211.0" prefWidth="67.0" text="-&gt;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
                                        </children>
                                     </GridPane>
                                  </children>
