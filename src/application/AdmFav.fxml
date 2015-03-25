@@ -21,16 +21,6 @@
                           <items>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                                  <children>
-                                    <CheckBox layoutX="35.0" layoutY="335.0" mnemonicParsing="false" text="Gunn" />
-                                    <CheckBox layoutX="35.0" layoutY="290.0" mnemonicParsing="false" text="Gruppe 1" />
-                                    <Button layoutX="37.0" layoutY="57.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="174.0" text="Ny avtale" />
-                                    <Button layoutX="39.0" layoutY="116.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="174.0" text="Administrer grupper" />
-                                    <CheckBox layoutX="35.0" layoutY="380.0" mnemonicParsing="false" text="Gruppe 3" />
-                                    <TextField layoutX="32.0" layoutY="515.0" promptText="Søk" />
-                                    <CheckBox layoutX="35.0" layoutY="425.0" mnemonicParsing="false" text="Margit" />
-                                    <CheckBox layoutX="35.0" layoutY="470.0" mnemonicParsing="false" text="Oddvar" />
-                                    <Text layoutX="33.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vis kalender for:" />
-                                    <Button layoutX="37.0" layoutY="178.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="174.0" text="Administrer favoritter" />
                                     <TitledPane animated="false" layoutY="570.0" prefHeight="200.0" prefWidth="340.0" text="Viser kalender for:">
                                       <content>
                                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
@@ -42,6 +32,107 @@
                                           </AnchorPane>
                                       </content>
                                     </TitledPane>
+                                    <VBox alignment="CENTER" layoutX="33.0" layoutY="40.0" maxWidth="1.7976931348623157E308" prefHeight="453.0" prefWidth="274.0">
+                                       <children>
+                                          <Button layoutX="37.0" layoutY="57.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="174.0" text="Ny avtale">
+                                             <VBox.margin>
+                                                <Insets bottom="15.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                          <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="174.0" text="Administrer grupper">
+                                             <VBox.margin>
+                                                <Insets bottom="15.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                          <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="174.0" text="Administrer favoritter" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dine favoritter" translateX="60.0">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets top="15.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                          <HBox>
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vis kalender for:" translateY="90.0">
+                                                   <HBox.margin>
+                                                      <Insets right="15.0" />
+                                                   </HBox.margin>
+                                                </Text>
+                                                <ScrollPane maxWidth="151.0" prefHeight="200.0" prefWidth="151.0">
+                                                   <content>
+                                                      <VBox prefHeight="200.0" prefWidth="140.0">
+                                                         <children>
+                                                            <CheckBox mnemonicParsing="false" text="Gruppe 3">
+                                                               <VBox.margin>
+                                                                  <Insets top="2.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                            <CheckBox mnemonicParsing="false" text="Gruppe 1">
+                                                               <VBox.margin>
+                                                                  <Insets top="2.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                            <CheckBox mnemonicParsing="false" text="Gunn">
+                                                               <VBox.margin>
+                                                                  <Insets top="2.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                            <CheckBox mnemonicParsing="false" text="Margit">
+                                                               <VBox.margin>
+                                                                  <Insets top="2.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                            <CheckBox mnemonicParsing="false" text="Oddvar">
+                                                               <VBox.margin>
+                                                                  <Insets top="2.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                            <CheckBox mnemonicParsing="false" text="Geir">
+                                                               <VBox.margin>
+                                                                  <Insets top="2.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                            <CheckBox mnemonicParsing="false" text="Kari">
+                                                               <VBox.margin>
+                                                                  <Insets top="2.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                            <CheckBox mnemonicParsing="false" text="Julie">
+                                                               <VBox.margin>
+                                                                  <Insets top="2.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                            <CheckBox mnemonicParsing="false" text="Thea">
+                                                               <VBox.margin>
+                                                                  <Insets top="2.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                            <CheckBox mnemonicParsing="false" text="Gruppe 3">
+                                                               <VBox.margin>
+                                                                  <Insets top="2.0" />
+                                                               </VBox.margin>
+                                                            </CheckBox>
+                                                         </children>
+                                                      </VBox>
+                                                   </content>
+                                                   <HBox.margin>
+                                                      <Insets top="5.0" />
+                                                   </HBox.margin>
+                                                </ScrollPane>
+                                             </children>
+                                          </HBox>
+                                          <TextField promptText="Søk">
+                                             <VBox.margin>
+                                                <Insets top="15.0" />
+                                             </VBox.margin>
+                                          </TextField>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </VBox>
                                  </children>
                               </AnchorPane>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
